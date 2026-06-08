@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mis 15 Años - Juliana Victoria</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Playfair Display, Montserrat & Alex Brush -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Montserrat:wght@100..900&family=Alex+Brush&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        beige: {
+                            50: '#FDFBF7',   /* Crema ultra claro (Fondo principal) */
+                            100: '#F9F5EC',  /* Beige suave */
+                            200: '#F3EAD8',  /* Arena cálido */
+                            300: '#E6D7BD',  /* Trigo */
+                            400: '#D7C29E',  /* Cuero natural claro */
+                            800: '#4A3E2E',  /* Texto marrón oscuro */
+                        },
+                        vinotinto: {
+                            100: '#F5E6E8',
+                            600: '#9B1B30',
+                            700: '#7A0C22',  /* Acento vinotinto elegante */
+                            800: '#5C061B',
+                            900: '#3A000E',
+                        }
+                    },
+                    fontFamily: {
+                        serif: ['Playfair Display', 'serif'],
+                        sans: ['Montserrat', 'sans-serif'],
+                        script: ['Alex Brush', 'cursive'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Sutil patrón de herradura y estrellas de fondo */
+        .bg-western-pattern {
+            background-color: #FDFBF7;
+            background-image: radial-gradient(#7A0C22 0.4px, transparent 0.4px), radial-gradient(#7A0C22 0.4px, #FDFBF7 0.4px);
+            background-size: 40px 40px;
+            background-position: 0 0, 20px 20px;
+            opacity: 0.02;
+            position: absolute;
+            inset: 0;
+            z-index: 0;
+        }
+        /* Costura vaquera decorativa en bordes */
+        .cowboy-stitch {
+            border: 2px dashed #D7C29E;
+        }
+    </style>
+</head>
+<body class="bg-beige-100 text-beige-800 font-sans min-h-screen flex flex-col justify-between selection:bg-vinotinto-100">
+
+    <!-- Tarjeta de Invitación (Contenedor Móvil Adaptable) -->
+    <div class="relative overflow-hidden w-full max-w-md mx-auto bg-beige-50 shadow-2xl border-x border-beige-200 min-h-screen pb-16 flex flex-col justify-between">
+        <!-- Capa de fondo decorativo -->
+        <div class="bg-western-pattern"></div>
+
+        <!-- Contenido principal -->
+        <div class="relative z-10 flex-grow">
+            
+            <!-- Iconografía Inicial (Herradura minimalista) -->
+            <div class="text-center pt-10 px-6">
+                <div class="flex justify-center mb-4">
+                    <svg class="w-16 h-16 text-vinotinto-700 opacity-90" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <!-- Herradura Elegante -->
+                        <path d="M28 25C28 17 36 12 50 12C64 12 72 17 72 25V58C72 71 60 80 50 80C40 80 28 71 28 58V25ZM35 25V58C35 66 42 72 50 72C58 72 65 66 65 58V25C65 21 59 17 50 17C41 17 35 21 35 25Z" fill="currentColor" />
+                        <!-- Detalles de perforaciones -->
+                        <circle cx="41" cy="30" r="1.5" fill="#FAF5EF" />
+                        <circle cx="41" cy="45" r="1.5" fill="#FAF5EF" />
+                        <circle cx="41" cy="58" r="1.5" fill="#FAF5EF" />
+                        <circle cx="59" cy="30" r="1.5" fill="#FAF5EF" />
+                        <circle cx="59" cy="45" r="1.5" fill="#FAF5EF" />
+                        <circle cx="59" cy="58" r="1.5" fill="#FAF5EF" />
+                        <!-- Estrella Vaquera Central -->
+                        <path d="M50 44L51.5 48L55.5 48L52.5 50.5L53.5 54.5L50 52L46.5 54.5L47.5 50.5L44.5 48L48.5 48L50 44Z" fill="#D7C29E" />
+                    </svg>
+                </div>
+                <p class="font-sans text-[10px] tracking-[0.4em] text-vinotinto-700 uppercase font-bold">Mis Quince Años</p>
+                <div class="w-10 h-[1px] bg-vinotinto-700 mx-auto my-3 opacity-60"></div>
+            </div>
+
+            <!-- Presentación de la Quinceañera -->
+            <div class="text-center px-6 mt-3">
+                <h1 class="font-script text-5xl text-vinotinto-700 leading-none">Juliana Victoria</h1>
+                <h2 class="font-serif text-lg text-beige-800 tracking-widest mt-1 font-semibold uppercase">Namias Paradas</h2>
+                
+                <p class="mt-6 text-xs italic text-beige-800 max-w-xs mx-auto leading-relaxed">
+                    "Hay momentos en la vida que son inolvidables, pero compartirlos con quienes más amamos los hace verdaderamente mágicos."
+                </p>
+            </div>
+
+            <!-- Presentación de los Padres -->
+            <div class="text-center px-6 mt-8">
+                <p class="font-sans text-[10px] tracking-wider text-vinotinto-700 uppercase font-bold mb-1.5 opacity-90">En compañía de mis padres</p>
+                <div class="font-serif text-sm text-beige-800 flex justify-center items-center gap-3">
+                    <span class="font-semibold tracking-wide">Jean Namias</span>
+                    <span class="text-vinotinto-700 font-script text-xl">&</span>
+                    <span class="font-semibold tracking-wide">Odra Paradas</span>
+                </div>
+            </div>
+
+            <!-- Cuenta Regresiva Elegantemente Clara (Fondo Trigo Claro) -->
+            <div class="mt-8 px-6 text-center">
+                <div class="bg-beige-100 border border-beige-200 rounded-2xl p-4 max-w-xs mx-auto shadow-sm">
+                    <p class="font-sans text-[9px] tracking-widest text-vinotinto-700 uppercase font-bold mb-2.5">Tiempo para el gran día</p>
+                    <div class="grid grid-cols-4 gap-1.5 text-center">
+                        <div class="bg-beige-50 border border-beige-200 p-2 rounded-xl">
+                            <span id="days" class="block font-serif text-lg font-bold text-vinotinto-700">00</span>
+                            <span class="text-[8px] uppercase tracking-wider text-beige-800 opacity-80">Días</span>
+                        </div>
+                        <div class="bg-beige-50 border border-beige-200 p-2 rounded-xl">
+                            <span id="hours" class="block font-serif text-lg font-bold text-vinotinto-700">00</span>
+                            <span class="text-[8px] uppercase tracking-wider text-beige-800 opacity-80">Horas</span>
+                        </div>
+                        <div class="bg-beige-50 border border-beige-200 p-2 rounded-xl">
+                            <span id="minutes" class="block font-serif text-lg font-bold text-vinotinto-700">00</span>
+                            <span class="text-[8px] uppercase tracking-wider text-beige-800 opacity-80">Min</span>
+                        </div>
+                        <div class="bg-beige-50 border border-beige-200 p-2 rounded-xl">
+                            <span id="seconds" class="block font-serif text-lg font-bold text-vinotinto-700">00</span>
+                            <span class="text-[8px] uppercase tracking-wider text-beige-800 opacity-80">Seg</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pase de Acceso Personalizado (Estilo Vaquero Premium, Beige predominante) -->
+            <div class="mt-8 px-6 text-center">
+                <div class="bg-beige-100 border-2 border-dashed border-beige-400 rounded-2xl p-5 max-w-xs mx-auto shadow-sm relative">
+                    <!-- Esquinas estilo cuero -->
+                    <div class="absolute top-0 left-0 w-4 h-4 border-t border-l border-vinotinto-700 m-2 opacity-40"></div>
+                    <div class="absolute top-0 right-0 w-4 h-4 border-t border-r border-vinotinto-700 m-2 opacity-40"></div>
+                    <div class="absolute bottom-0 left-0 w-4 h-4 border-b border-l border-vinotinto-700 m-2 opacity-40"></div>
+                    <div class="absolute bottom-0 right-0 w-4 h-4 border-b border-r border-vinotinto-700 m-2 opacity-40"></div>
+
+                    <p class="font-sans text-[9px] tracking-widest uppercase text-vinotinto-700 font-bold mb-1">Pase de Acceso Especial</p>
+                    <div class="w-6 h-[1px] bg-vinotinto-700 mx-auto mb-3 opacity-40"></div>
+                    
+                    <!-- Nombre Dinámico bloqueado -->
+                    <h3 id="guest-name-card" class="font-serif text-base font-bold text-beige-800 tracking-wide">Invitado Especial</h3>
+                    
+                    <!-- Cantidad de Pases bloqueada -->
+                    <div class="mt-3.5 inline-flex items-center gap-1.5 bg-beige-200 px-3.5 py-1.5 rounded-full border border-beige-300">
+                        <svg class="w-3.5 h-3.5 text-vinotinto-700" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/>
+                        </svg>
+                        <span class="text-[10px] uppercase tracking-wider font-semibold text-beige-800">Pases:</span>
+                        <span id="guest-passes-card" class="font-serif text-sm font-bold text-vinotinto-700">2</span>
+                    </div>
+                    <p class="text-[9px] text-beige-800 mt-2 opacity-80 italic">* Pase digital no editable por el destinatario.</p>
+                </div>
+            </div>
+
+            <!-- Detalles del Evento (Ubicación y Fecha) -->
+            <div class="mt-10 px-6">
+                <div class="border-y border-beige-300 py-6 text-center space-y-6">
+                    <!-- Fecha y hora -->
+                    <div>
+                        <div class="flex justify-center mb-1.5">
+                            <svg class="w-5 h-5 text-vinotinto-700" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5m-9-6h.008v.008H12v-.008zM12 15h.008v.008H12V15zm0 2.25h.008v.008H12v-.008zM9.75 15h.008v.008H9.75V15zm0 2.25h.008v.008H9.75v-.008zM7.5 15h.008v.008H7.5V15zm0 2.25h.008v.008H7.5v-.008zm6.75-4.5h.008v.008h-.008v-.008zm0 2.25h.008v.008h-.008V15zm0 2.25h.008v.008h-.008v-.008zm2.25-4.5h.008v.008H16.5v-.008zm0 2.25h.008v.008H16.5V15z" />
+                            </svg>
+                        </div>
+                        <h4 class="font-serif text-base font-bold text-vinotinto-700 uppercase tracking-wide">Sábado, 04 de Julio</h4>
+                        <p class="font-sans text-[10px] tracking-widest text-beige-800 uppercase mt-0.5">Hora: 5:00 PM</p>
+                    </div>
+
+                    <!-- Dirección -->
+                    <div>
+                        <div class="flex justify-center mb-1.5">
+                            <svg class="w-5 h-5 text-vinotinto-700" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
+                            </svg>
+                        </div>
+                        <h4 class="font-serif text-base font-bold text-vinotinto-700 uppercase tracking-wide">Finca El Estribo</h4>
+                        <p class="font-sans text-xs text-beige-800 max-w-xs mx-auto leading-relaxed mt-1">
+                            Safari Country Club, Parcela V-337.<br>
+                            Carabobo, Venezuela.
+                        </p>
+                        
+                        <!-- Botón Mapa -->
+                        <a href="https://www.google.com/maps/search/?api=1&query=Finca+El+Estribo+Safari+Country+Club" 
+                           target="_blank" 
+                           class="inline-flex items-center gap-1.5 mt-3.5 px-4 py-2 bg-beige-200 border border-beige-300 text-vinotinto-700 hover:bg-vinotinto-700 hover:text-white transition-all duration-300 text-[10px] uppercase tracking-wider font-bold rounded-full shadow-sm">
+                            Ver Mapa de Acceso
+                            <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Código de Vestimenta Claramente Especificado (Vaquero, Botas y Sombrero) -->
+            <div class="mt-8 px-6 text-center">
+                <div class="bg-beige-100 border border-beige-200 rounded-2xl p-6 max-w-xs mx-auto shadow-sm">
+                    <!-- Iconografía temática en Vinotinto -->
+                    <div class="flex justify-center gap-3 mb-3">
+                        <!-- Sombrero Vaquero SVG -->
+                        <svg class="w-10 h-10 text-vinotinto-700" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12,2C11.5,2 10,4.5 9,5.5C8,6.5 6,8.5 6,10C6,11.5 7.5,13 12,13C16.5,13 18,11.5 18,10C18,8.5 16,6.5 15,5.5C14,4.5 12.5,2 12,2M12,14C7,14 2,15.5 2,17C2,17.8 4.2,18.5 7.5,18.8C8,19.2 8.7,19.5 9.5,19.7C10.5,20.1 11.5,20.3 12.5,20.3C13.5,20.3 14.5,20.1 15.5,19.7C16.3,19.5 17,19.2 17.5,18.8C20.8,18.5 23,17.8 23,17C23,15.5 18,14 12,14Z" />
+                        </svg>
+                        <!-- Bota Vaquera SVG -->
+                        <svg class="w-10 h-10 text-vinotinto-700" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M19.3,15.1C19.1,14.6 18.7,14.2 18.2,13.9L16,12.5V4C16,3.4 15.6,3 15,3H12C11.4,3 11,3.4 11,4V10L9.5,11.1L6.4,12.4C5.7,12.7 5.2,13.3 5.1,14.1L4.1,21H10.1C10.7,21 11.1,20.6 11.3,20.1L12.5,17L13.7,20.1C13.9,20.6 14.3,21 14.9,21H20.9L19.3,15.1Z" />
+                        </svg>
+                    </div>
+                    
+                    <h4 class="font-serif text-base font-bold text-vinotinto-700 uppercase tracking-wide">Código de Vestimenta</h4>
+                    <p class="font-sans text-[10px] tracking-widest text-beige-800 uppercase font-bold mt-1 mb-2">Obligatorio</p>
+                    
+                    <div class="h-[1px] w-8 bg-vinotinto-700 mx-auto my-3 opacity-40"></div>
+                    
+                    <p class="text-xs text-beige-800 leading-relaxed max-w-xs mx-auto font-medium">
+                        Te pedimos asistir luciendo un espectacular <span class="text-vinotinto-700 font-bold">Estilo Vaquero</span>. Es indispensable vestir con <span class="text-vinotinto-700 font-bold">botas y sombrero</span> para estar a tono con la celebración.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Regalo en Efectivo / Lluvia de Sobres -->
+            <div class="mt-8 px-6 text-center">
+                <div class="bg-beige-100 border border-beige-200 rounded-2xl p-5 max-w-xs mx-auto shadow-sm">
+                    <div class="flex justify-center mb-1.5">
+                        <svg class="w-6 h-6 text-vinotinto-700" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
+                        </svg>
+                    </div>
+                    <h4 class="font-serif text-base font-bold text-vinotinto-700 uppercase tracking-wide">Lluvia de Sobres</h4>
+                    <p class="text-[11px] text-beige-800 mt-1 max-w-xs mx-auto leading-relaxed">
+                        Tu presencia es nuestro mejor obsequio. Si deseas tener un detalle con Juliana, preferimos el <span class="text-vinotinto-700 font-bold">regalo en efectivo</span>. Podrás depositar tu sobre en el cofre el día del evento.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Botones de Confirmación a WhatsApp -->
+            <div class="mt-8 px-6 text-center">
+                <div class="bg-beige-100 border border-beige-300 rounded-2xl p-5 max-w-xs mx-auto shadow-sm">
+                    <h4 class="font-serif text-base font-bold text-vinotinto-700 uppercase tracking-wide">Confirmar Asistencia</h4>
+                    <p class="text-[11px] text-beige-800 mb-4 mt-1 leading-normal">
+                        Para ayudarnos con la organización, te pedimos confirmar tu asistencia directamente con nosotros:
+                    </p>
+                    
+                    <div class="space-y-2.5">
+                        <!-- Confirmación Mamá -->
+                        <button onclick="confirmWithMom()" 
+                           class="w-full flex items-center justify-center gap-2.5 px-4 py-2.5 bg-[#25D366] hover:bg-[#128C7E] text-white font-bold text-xs uppercase tracking-wider rounded-xl transition duration-300 shadow-sm">
+                            <svg class="w-4.5 h-4.5 fill-current" viewBox="0 0 24 24">
+                                <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.713-1.455L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.825 1.451 5.436 0 9.86-4.37 9.864-9.799.002-2.63-1.023-5.101-2.885-6.963C16.488 2.015 14.048 1 11.993 1c-5.435 0-9.861 4.371-9.865 9.801-.001 1.736.47 3.428 1.363 4.921L2.43 21.144l5.59-1.451h-.001c-.001.002 0 .002 0 0z"/>
+                            </svg>
+                            Confirmar a Odra (Mamá)
+                        </button>
+                        
+                        <!-- Confirmación Papá -->
+                        <button onclick="confirmWithDad()" 
+                           class="w-full flex items-center justify-center gap-2.5 px-4 py-2.5 bg-[#25D366] hover:bg-[#128C7E] text-white font-bold text-xs uppercase tracking-wider rounded-xl transition duration-300 shadow-sm">
+                            <svg class="w-4.5 h-4.5 fill-current" viewBox="0 0 24 24">
+                                <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.713-1.455L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.825 1.451 5.436 0 9.86-4.37 9.864-9.799.002-2.63-1.023-5.101-2.885-6.963C16.488 2.015 14.048 1 11.993 1c-5.435 0-9.861 4.371-9.865 9.801-.001 1.736.47 3.428 1.363 4.921L2.43 21.144l5.59-1.451h-.001c-.001.002 0 .002 0 0z"/>
+                            </svg>
+                            Confirmar a Jean (Papá)
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mensaje Despedida -->
+            <div class="mt-12 text-center pb-12 px-6">
+                <p class="font-script text-3xl text-vinotinto-700">¡Te espero con tus botas puestas!</p>
+                <p class="font-sans text-[9px] uppercase tracking-widest text-beige-800 mt-2">Juliana Victoria • 4 de Julio</p>
+            </div>
+
+        </div>
+
+        <!-- PANEL DE CONTROL ADMINISTRATIVO (Exclusivo Padres para definir nombres/pases) -->
+        <div class="relative z-20 border-t border-beige-300 bg-beige-100 bg-opacity-98 p-4 mt-auto">
+            <button onclick="toggleAdminPanel()" class="w-full flex items-center justify-between text-[11px] uppercase tracking-wider font-bold text-vinotinto-700">
+                <span class="flex items-center gap-2">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4" />
+                    </svg>
+                    Panel de Padres (Definir Invitados)
+                </span>
+                <span id="admin-arrow">▼</span>
+            </button>
+            
+            <div id="admin-panel" class="hidden mt-4 space-y-3 pt-3 border-t border-beige-300">
+                <p class="text-[11px] text-beige-800 leading-normal">
+                    Escribe el nombre de tu invitado y selecciona el número de pases permitidos. Al generar el enlace, compártelo por WhatsApp para que accedan de forma fija sin poder modificarlo.
+                </p>
+                <div>
+                    <label class="block text-[10px] font-semibold text-beige-800 uppercase mb-1">Nombre de la Persona / Familia:</label>
+                    <input type="text" id="admin-guest-name" placeholder="Ej: Sr. y Sra. Mendoza" class="w-full px-3 py-2 text-xs bg-white border border-beige-300 rounded-lg focus:outline-none focus:ring-1 focus:ring-vinotinto-700">
+                </div>
+                <div>
+                    <label class="block text-[10px] font-semibold text-beige-800 uppercase mb-1">Cantidad de Pases:</label>
+                    <select id="admin-guest-passes" class="w-full px-3 py-2 text-xs bg-white border border-beige-300 rounded-lg focus:outline-none focus:ring-1 focus:ring-vinotinto-700">
+                        <option value="1">1 Pase</option>
+                        <option value="2" selected>2 Pases</option>
+                        <option value="3">3 Pases</option>
+                        <option value="4">4 Pases</option>
+                        <option value="5">5 Pases</option>
+                        <option value="6">6 Pases</option>
+                        <option value="7">7 Pases</option>
+                        <option value="8">8 Pases</option>
+                    </select>
+                </div>
+                <button onclick="generateCustomInvite()" class="w-full bg-vinotinto-700 text-white py-2 rounded-lg text-xs uppercase tracking-wider font-bold hover:bg-vinotinto-800 transition duration-300">
+                    Generar Invitación
+                </button>
+
+                <!-- Resultado del Link -->
+                <div id="share-result" class="hidden space-y-2 pt-2">
+                    <div class="h-[1px] bg-beige-300 my-2"></div>
+                    <label class="block text-[10px] font-semibold text-vinotinto-700 uppercase">Enlace Listo para Compartir:</label>
+                    <input type="text" id="generated-link" readonly class="w-full px-2 py-1 text-xs bg-white border border-beige-300 rounded text-gray-600 focus:outline-none">
+                    
+                    <button onclick="copyGeneratedLink()" class="w-full bg-beige-800 text-white py-1.5 rounded text-xs font-semibold hover:bg-beige-900">
+                        Copiar Enlace
+                    </button>
+                    <button onclick="shareViaWhatsApp()" class="w-full bg-[#25D366] text-white py-1.5 rounded text-xs font-semibold hover:bg-[#128C7E] flex items-center justify-center gap-1">
+                        Enviar Enlace por WhatsApp
+                    </button>
+                    <p id="copy-notification" class="hidden text-center text-xs text-green-700 font-semibold">¡Enlace copiado con éxito!</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        // Inicialización de Variables Dinámicas
+        let guestName = "Invitado Especial";
+        let guestPasses = "2";
+
+        // Números reales de teléfono proporcionados
+        const MOM_PHONE = "584121322987";
+        const DAD_PHONE = "584124772987";
+
+        // Lectura de la URL al cargar el sitio
+        window.addEventListener('DOMContentLoaded', () => {
+            const params = new URLSearchParams(window.location.search);
+            const nameParam = params.get('invitado');
+            const passesParam = params.get('pases');
+
+            if (nameParam) {
+                guestName = decodeURIComponent(nameParam);
+            }
+            if (passesParam) {
+                guestPasses = decodeURIComponent(passesParam);
+            }
+
+            // Inyectar datos en la interfaz (De manera estática y no modificable por el destinatario)
+            document.getElementById('guest-name-card').innerText = guestName;
+            document.getElementById('guest-passes-card').innerText = guestPasses;
+
+            // Iniciar Cuenta Regresiva
+            startCountdown();
+        });
+
+        // Temporizador enfocado al 4 de Julio de 2026 a las 5:00 PM
+        function startCountdown() {
+            const targetDate = new Date("July 4, 2026 17:00:00").getTime();
+
+            const interval = setInterval(() => {
+                const now = new Date().getTime();
+                const distance = targetDate - now;
+
+                if (distance < 0) {
+                    clearInterval(interval);
+                    document.getElementById("days").innerText = "00";
+                    document.getElementById("hours").innerText = "00";
+                    document.getElementById("minutes").innerText = "00";
+                    document.getElementById("seconds").innerText = "00";
+                    return;
+                }
+
+                const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                document.getElementById("days").innerText = days < 10 ? "0" + days : days;
+                document.getElementById("hours").innerText = hours < 10 ? "0" + hours : hours;
+                document.getElementById("minutes").innerText = minutes < 10 ? "0" + minutes : minutes;
+                document.getElementById("seconds").innerText = seconds < 10 ? "0" + seconds : seconds;
+            }, 1000);
+        }
+
+        // Acciones de Redirección para WhatsApp
+        function confirmWithMom() {
+            const message = `Hola Odra, confirmo mi asistencia a los 15 de Juliana Victoria. Nombre: ${guestName}. Pases autorizados: ${guestPasses}. ¡Nos vemos allá! 🤠✨`;
+            const encodedMessage = encodeURIComponent(message);
+            window.open(`https://api.whatsapp.com/send?phone=${MOM_PHONE}&text=${encodedMessage}`, '_blank');
+        }
+
+        function confirmWithDad() {
+            const message = `Hola Jean, confirmo mi asistencia a los 15 de Juliana Victoria. Nombre: ${guestName}. Pases autorizados: ${guestPasses}. ¡Nos vemos allá! 🤠✨`;
+            const encodedMessage = encodeURIComponent(message);
+            window.open(`https://api.whatsapp.com/send?phone=${DAD_PHONE}&text=${encodedMessage}`, '_blank');
+        }
+
+        // Visibilidad del Panel Administrativo de los padres
+        function toggleAdminPanel() {
+            const panel = document.getElementById('admin-panel');
+            const arrow = document.getElementById('admin-arrow');
+            if (panel.classList.contains('hidden')) {
+                panel.classList.remove('hidden');
+                arrow.innerText = '▲';
+            } else {
+                panel.classList.add('hidden');
+                arrow.innerText = '▼';
+            }
+        }
+
+        // Generar invitación personalizada
+        let formattedWhatsappMessage = "";
+        
+        function generateCustomInvite() {
+            const inputName = document.getElementById('admin-guest-name').value.trim() || "Invitado Especial";
+            const inputPasses = document.getElementById('admin-guest-passes').value;
+
+            // Conseguir la URL limpia actual
+            const currentUrl = window.location.href.split('?')[0];
+            const customLink = `${currentUrl}?invitado=${encodeURIComponent(inputName)}&pases=${encodeURIComponent(inputPasses)}`;
+
+            document.getElementById('generated-link').value = customLink;
+            document.getElementById('share-result').classList.remove('hidden');
+
+            // Mensaje de invitación personalizado para WhatsApp
+            formattedWhatsappMessage = `¡Hola! Queremos invitarte formalmente a celebrar los 15 años de nuestra hija Juliana Victoria. 🤠✨ En el siguiente enlace puedes ver tu pase digital personalizado con tus pases reservados:\n\n${customLink}`;
+        }
+
+        // Copiar el enlace en celulares o computadoras de forma segura
+        function copyGeneratedLink() {
+            const linkInput = document.getElementById('generated-link');
+            linkInput.select();
+            linkInput.setSelectionRange(0, 99999);
+
+            try {
+                document.execCommand('copy');
+                showNotification();
+            } catch (err) {
+                console.error('Error al copiar el enlace', err);
+            }
+        }
+
+        function showNotification() {
+            const notif = document.getElementById('copy-notification');
+            notif.classList.remove('hidden');
+            setTimeout(() => {
+                notif.classList.add('hidden');
+            }, 3000);
+        }
+
+        // Compartir el enlace con un mensaje directo a WhatsApp
+        function shareViaWhatsApp() {
+            if (!formattedWhatsappMessage) return;
+            const encodedText = encodeURIComponent(formattedWhatsappMessage);
+            window.open(`https://api.whatsapp.com/send?text=${encodedText}`, '_blank');
+        }
+    </script>
+</body>
+</html>
